@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Quest | Final Score</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🏆 Congratulations!</h1>
+
+        <p class="subtitle">
+            You have completed all four puzzles.
+        </p>
+
+        <h2>Your Final Score</h2>
+
+        <div id="finalScore" class="score">
+            0 / 4
+        </div>
+
+        <h2 id="remark">
+            Loading...
+        </h2>
+
+        <br>
+
+        <button onclick="restartGame()">
+            🔄 Play Again
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='index.html'">
+            🏠 Home
+        </button>
+
+        <footer>
+            Thank you for playing <strong>Puzzle Quest</strong>!
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    displayScore();
+</script>
+
+</body>
+</html>
