@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Quest</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🧩 Puzzle Quest</h1>
+
+            <p class="subtitle">
+                Welcome to Puzzle Quest!
+            </p>
+
+            <p>
+                Test your brain with four fun puzzles.
+            </p>
+
+            <div class="rules">
+
+                <h2>Game Rules</h2>
+
+                <ul>
+                    <li>✔ There are 4 puzzles.</li>
+                    <li>✔ Enter the correct answer in the textbox.</li>
+                    <li>✔ Every correct answer earns 1 point.</li>
+                    <li>✔ Maximum Score = 4.</li>
+                    <li>✔ Answers are not case-sensitive.</li>
+                    <li>✔ Finish all puzzles to see your score.</li>
+
+                </ul>
+
+            </div>
+
+            <button id="startBtn">
+                Start Game
+            </button>
+
+        </div>
+
+    </div>
+
+<script>
+
+localStorage.setItem("score",0);
+
+document.getElementById("startBtn").addEventListener("click",function(){
+
+window.location.href="puzzle1.html";
+
+});
+
+</script>
+
+</body>
+</html>
