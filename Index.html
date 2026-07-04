@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puzzle Quest</title>
+    <meta name="description" content="Puzzle Quest - Challenge yourself with four exciting puzzles and test your problem-solving skills.">
+    <meta name="author" content="Yukti Maheshwari">
+
+    <title>Puzzle Quest | Home</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <div class="card">
+        <section class="card">
 
-            <h1>🧩 Puzzle Quest</h1>
+            <header>
 
-            <p class="subtitle">
-                Welcome to Puzzle Quest!
-            </p>
+                <h1>🧩 Puzzle Quest</h1>
 
-            <p>
-                Test your brain with four fun puzzles.
-            </p>
+                <p class="subtitle">
+                    Welcome to Puzzle Quest! Test your logic, observation, and problem-solving skills.
+                </p>
 
-            <div class="rules">
+            </header>
 
-                <h2>Game Rules</h2>
+            <section class="rules">
+
+                <h2>📋 Game Rules</h2>
 
                 <ul>
-                    <li>✔ There are 4 puzzles.</li>
-                    <li>✔ Enter the correct answer in the textbox.</li>
-                    <li>✔ Every correct answer earns 1 point.</li>
-                    <li>✔ Maximum Score = 4.</li>
-                    <li>✔ Answers are not case-sensitive.</li>
-                    <li>✔ Finish all puzzles to see your score.</li>
-
+                    <li>There are <strong>4 puzzles</strong> to solve.</li>
+                    <li>Each correct answer earns <strong>1 point</strong>.</li>
+                    <li>The maximum possible score is <strong>4/4</strong>.</li>
+                    <li>Answers are <strong>not case-sensitive</strong>.</li>
+                    <li>You can proceed only after solving the current puzzle.</li>
+                    <li>Your final score will be displayed after Puzzle 4.</li>
                 </ul>
 
-            </div>
+            </section>
 
-            <button id="startBtn">
-                Start Game
-            </button>
+            <section>
 
-        </div>
+                <button id="startBtn" aria-label="Start the Puzzle Game">
+                    🚀 Start Game
+                </button>
 
-    </div>
+            </section>
 
-<script>
+            <footer>
 
-localStorage.setItem("score",0);
+                <p>
+                    Designed by <strong>Yukti Maheshwari</strong>
+                </p>
 
-document.getElementById("startBtn").addEventListener("click",function(){
+            </footer>
 
-window.location.href="puzzle1.html";
+        </section>
 
-});
+    </main>
 
-</script>
+    <script>
+
+        // Reset score whenever a new game starts
+        localStorage.setItem("score", "0");
+
+        // Start Game Button
+        document.getElementById("startBtn").addEventListener("click", function () {
+            window.location.href = "puzzle1.html";
+        });
+
+    </script>
 
 </body>
+
 </html>
